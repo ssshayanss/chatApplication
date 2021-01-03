@@ -2,7 +2,8 @@
   "name": "chat-application",
   "version": "1.0.0",
   "scripts": {
-    "backend": "node ./server/server.js"
+    "backend": "node ./server/server.js",
+    "client": "cd ./client && npm start"
   },
   "author": "",
   "license": "ISC",
