@@ -1,12 +1,13 @@
 import { Container, Card } from 'react-bootstrap';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { RegisterPage, LoginPage, DashboardPage, ChatRoomPage } from './pages';
+import { RootPage, RegisterPage, LoginPage, DashboardPage, ChatRoomPage } from './pages';
 
 const App = () => (
 	<Container className="vh-100 d-flex justify-content-center align-items-center">
 		<Card className="w-100 shadow-lg">
 			<BrowserRouter>
 				<Switch>
+					<Route exact path="/" component={RootPage} />
 					<Route path="/register" component={RegisterPage} />
 					<Route path="/login" component={LoginPage} />
 					<Route path="/dashboard" component={DashboardPage} />
