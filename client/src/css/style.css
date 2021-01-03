@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+  font-family: 'PT Sans', sans-serif;;
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  font-size: 15px;
+}
+
+.cardHeader {
+  background: #007bff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transform: skewY(-4deg);
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  left: -0.75rem;
+}
+
+.cardBody {
+  margin: 3.5rem 1rem 1rem 1rem;
+}
+
+.inputGroup {
+  width: 100%;
+}
+
+.formInput {
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 2px;
+  border-bottom: 1px solid #eee;
+  transition: all 0.5s;
+  outline: none;
+}
+
+.formInput:focus {
+  border-bottom: 1px solid #ccc;
+}
+
+.formButton {
+  background: #007bff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+}
+
+.username {
+  text-transform: capitalize;
+}
+
+.iconButton {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.roomsList {
+  overflow: auto;
+  max-height: 300px;
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .card {
+    width: 70% !important;
+  }
+}
